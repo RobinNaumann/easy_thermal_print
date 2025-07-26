@@ -22,6 +22,7 @@ class PrintData {
 /// [dryRun] indicates whether to simulate the print job without sending data to the printer,
 /// default is false.
 class PrintConfig {
+  /// Size of the label to print on in millimeters.
   final Size labelSize;
   final int printSpeed;
   final int packetSize;

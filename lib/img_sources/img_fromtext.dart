@@ -8,7 +8,7 @@ import 'package:image/image.dart' as img;
 
 import '../model/m_printer_model.dart';
 
-const _presetStyle = TextStyle(
+const presetTextStyle = TextStyle(
   fontFamily: 'Roboto',
   color: Colors.black,
   fontSize: 32.0,
@@ -17,7 +17,7 @@ const _presetStyle = TextStyle(
 Future<ImageData> imageFromText(
   String text, {
   Size? size,
-  TextStyle style = _presetStyle,
+  TextStyle style = presetTextStyle,
   //TextAlign alignment = TextAlign.center,
 }) async {
   m.TextPainter textPainter = m.TextPainter(

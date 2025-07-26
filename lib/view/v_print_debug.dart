@@ -12,7 +12,11 @@ import 'package:flutter/material.dart';
 class PrintedViewer extends StatelessWidget {
   final ThermalPrinter printer;
   final Size size;
-  const PrintedViewer({super.key, required this.printer, required this.size});
+  const PrintedViewer({
+    super.key,
+    required this.printer,
+    this.size = const Size(70, 70),
+  });
 
   @override
   Widget build(BuildContext context) {

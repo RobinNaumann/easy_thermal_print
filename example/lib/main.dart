@@ -42,16 +42,13 @@ class HomePage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children:
                                 [
-                                  Text.h5(
-                                    "Phomemo " + printer.model.deviceName,
-                                  ),
-                                  //Text(printer.deviceId),
+                                  Text.h5(printer.model.deviceName),
+                                  Text(printer.deviceId),
                                   Button.minor(
                                     label: "Print Widget",
                                     onTap: () async {
-                                      await printer.print(
-                                        await imageFromWidget(containerKey),
-                                        //await imageFromText("HELLO WORLD"),
+                                      await printer.printWidget(
+                                        containerKey,
                                         PrintConfig(
                                           halfTones: true,
                                           labelSize: Size(double.infinity, 12),
@@ -59,10 +56,7 @@ class HomePage extends StatelessWidget {
                                       );
                                     },
                                   ),
-                                  PrintedViewer(
-                                    printer: printer,
-                                    size: Size(70, 70),
-                                  ),
+                                  PrintedViewer(printer: printer),
                                 ].spaced(),
                           ),
                         ),
