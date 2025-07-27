@@ -1,15 +1,13 @@
 name: easy_thermal_print
 description: "a package for accessing thermal printers via flutter"
-version: 0.1.3+2
+version: 0.1.4+3
 homepage: https://pub.dev/packages/easy_thermal_print
 repository: https://github.com/RobinNaumann/easy_thermal_print
 topics:
   - bluetooth
   - ble
-  - thermal printer
-  - printing
+  - thermal-printer
   - phomemo
-  - thermalprint
   - halftone
 
 environment:

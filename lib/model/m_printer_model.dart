@@ -99,14 +99,3 @@ class PrinterModel {
     this.bleConfig = phomemoBLEConfig,
   });
 }
-
-final List<PrinterModel> phomemoPrinters = [
-  PrinterModel.phomemo(deviceName: 'M110', dpmm: 203 / 25.4, rotateImage: true),
-  PrinterModel.phomemo(deviceName: 'D30', dpmm: 203 / 25.4),
-  PrinterModel.phomemo(deviceName: 'M220', dpmm: 203 / 25.4, rotateImage: true),
-  PrinterModel.phomemo(
-    deviceName: 'P12Pro',
-    dpmm: 203 / 25.4,
-    rotateImage: true,
-  ),
-];

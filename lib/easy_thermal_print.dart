@@ -3,6 +3,7 @@ export 'img_sources/img_fromwidget.dart';
 export "model/m_phomemo.dart";
 export "model/m_printer_model.dart";
 export "model/m_thermal_printer.dart";
+export 'printers.dart';
 export 's_bluetooth.dart';
 export 'view/v_print_debug.dart';
 export 'view/v_printable.dart';
